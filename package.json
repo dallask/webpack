@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/dallask/webpack#readme",
   "devDependencies": {
-    "webpack": "^4.28.4"
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
   }
 }
