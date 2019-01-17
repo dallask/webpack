@@ -1,5 +1,5 @@
 {
-  "name": "webpack",
+  "name": "webpack_basic_usage",
   "version": "1.0.0",
   "description": "Webpack basic usage",
   "main": "index.js",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/dallask/webpack/issues"
   },
-  "homepage": "https://github.com/dallask/webpack#readme"
+  "homepage": "https://github.com/dallask/webpack#readme",
+  "devDependencies": {
+    "webpack": "^4.28.4"
+  }
 }
