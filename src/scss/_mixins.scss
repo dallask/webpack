@@ -1,0 +1,58 @@
+@mixin bp($point) {
+    @if $point==tablet {
+        @media (min-width: 768px) {
+            @content ;
+        }
+    }
+    @else if $point==desktop {
+        @media (min-width: 924px) {
+            @content ;
+        }
+    }
+    @else if $point==desktop_wide {
+        @media (min-width: 1200px) {
+            @content ;
+        }
+    }
+    @else if $point==desktop_1600 {
+        @media (min-width: 1600px) {
+            @content ;
+        }
+    }
+}
+
+@mixin placeholder {
+    &.placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+
+@mixin float-left {
+    float: left;
+}
+
+@mixin a-button {
+    a {
+        background-color: blue;
+        color: white;
+        radius: 3px;
+        margin: 2px;
+
+        &:hover {
+            color: red;
+        }
+
+        &:visited {
+            color: green;
+        }
+    }
+}

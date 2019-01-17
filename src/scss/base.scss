@@ -1,6 +1,33 @@
 @import "included";
+@import "variables";
+@import "mixins";
 $bg-color: pink;
 
 body {
   background: $bg-color;
 }
+
+/* mixin .menu-button */
+.menu-button {
+  @include a-button;
+}
+/* /mixin .menu-button */
+
+/* mixin .breakpoint */
+.breakpoint {
+  @include bp(tablet) {
+    padding: 0px 62px 20px 52px;
+  }
+  @include bp(desktop) {
+    display: block;
+  }
+}
+/* /mixin .breakpoint */
+
+/* mixin .placeholder */
+.placeholder {
+  @include placeholder {
+    font-size: 10px;
+  }
+}
+/* /mixin .placeholder */
